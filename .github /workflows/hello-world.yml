@@ -1,0 +1,13 @@
+name: Custome trigger
+
+on:
+  push:
+    branches:
+     - main
+  repository_dispatch:
+    Types: [test_result]
+
+jobs:
+    custom_trigger_job:
+      tuns_on: ubuntu-latest
+      
